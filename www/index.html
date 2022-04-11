@@ -78,30 +78,17 @@
 		</div>
 	</header>
 	<!-- end header -->
-	<video autoplay muted id="myVideo">
-		<source src="./videos/websiteIntroh264.mp4" type="video/mp4">
-	</video>
+	<div id="hero">
+		<video autoplay muted poster>
+			<source src="./videos/websiteIntroh264.mp4" type="video/mp4">
+		</video>
+		<div id="home" class="content d-flex align-items-center">
+
+		</div>
+	</div>
 
 	<!-- home -->
-	<section id="home" class="home" data-src="img/home/homepageHighRes.jpg" data-parallax>
-		<div class="container">
-			<div class="row">
-				<div class="col-12">
-					<div class="home__content">
-						<h1 class="home__title fade-in-text">Welcome to GoodGains</h1>
 
-						<p class="home__text fade-in-text">Next Level Investing</p>
-
-						<div class="home__btns fade-in-text">
-							<a data-scroll href="#getstarted" class="home__btn home__btn--white"><span>Get started</span></a>
-
-							<a href="./documents/GGXWhitePaperNoCaps.pdf" target="_blank" class="home__btn"><span>whitepaper</span></a>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 	<!-- end home -->
 
 	<!-- about -->
@@ -1125,6 +1112,22 @@
 	<!-- end forgot -->
 
 	<!-- JS -->
+	<script type="text/javascript">
+		window.addEventListener('load', function () {
+			setTimeout(function() {
+				document.getElementById('home').innerHTML += '<div class="container">\n' +
+					'\t<h1 class="home__title ">Welcome to GoodGains</h1>\n' +
+					'\n' +
+					'\t<p class="home__text ">Next Level Investing</p>\n' +
+					'\n' +
+					'\t<div class="home__btns">\n' +
+					'\t\t<a data-scroll href="#getstarted" class="home__btn home__btn--white"><span>Get started</span></a>\n' +
+					'\t\t<a href="./documents/GGXWhitePaperNoCaps.pdf" target="_blank" class="home__btn"><span>whitepaper</span></a>\n' +
+					'\t</div>\n' +
+					'</div>\n';
+			}, 9500)
+		});
+	</script>
 	<script src="js/jquery-3.5.1.min.js"></script>
 	<script src="js/bootstrap.bundle.min.js"></script>
 	<script src="js/owl.carousel.min.js"></script>
