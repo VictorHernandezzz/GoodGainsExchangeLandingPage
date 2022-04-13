@@ -66,20 +66,21 @@ body {
 #hero video {
   height: 100vh;
   width: 100%;
-  background-position: absolute;
-  z-index: 10;
+  z-index: 18;
   object-fit: cover;
+}
+#hero img {
 }
 
 #hero .content {
   background: rgba(0,0,0,0);
-  height: 100%;
+  height: 90%;
   width: 100%;
   z-index: 20;
   position: absolute;
   top: 0;
   left: 0;
-  padding-top: 260px;
+  padding-top: 0;
 }
 
 
@@ -326,7 +327,7 @@ ul {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 9;
+  z-index: 50;
   background-color: transparent;
 }
 .header:before {
@@ -681,6 +682,12 @@ ul {
   display: block;
   position: relative;
 }
+#home {
+  display: block;
+  position: relative;
+  height: 90%;
+  width: 100%;
+}
 .home:after {
   content: '';
   position: absolute;
@@ -711,7 +718,7 @@ ul {
   align-items: center;
   flex-wrap: wrap;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: relative;
   margin-top: 75px;
   z-index: 2;
@@ -733,7 +740,7 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: 150%;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 .home__text {
   display: block;
@@ -743,15 +750,18 @@ ul {
   font-size: 18px;
   line-height: 26px;
   font-weight: 600;
-  margin: 0 0 30px;
+  margin: 0;
   font-family: 'Jura', sans-serif;
 }
+
 .home__btns {
   display: flex;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin-top: 350px;
+
 }
 .home__btn {
   display: flex;
@@ -3367,5 +3377,17 @@ ul {
   }
   to {
     background-position: 100px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .home__btns {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 175px;
+
   }
 }
