@@ -1,9 +1,9 @@
 /*----------------------------------------
 [Master Stylesheet]
 
-Project:	BuyCoin
+Project:	GoodGains Exchange
 Version:	2.1
-Primary use:	BuyCoin HTML Template
+Primary use:	GoodGains landing Page
 ----------------------------------------*/
 /*----------------------------------------
 [Table of contents]
@@ -104,7 +104,7 @@ body {
 
 #developerChecklistList {
   margin: auto;
-  width: 80%;
+  width: 330px;
   padding-top: 15px;
   color: #ffffff;
 }
@@ -3011,7 +3011,7 @@ ul {
   margin-right: 0;
 }
 .footer__nav a:hover {
-  color: #647dee;
+  color: #a754e2;
 }
 .footer__social {
   display: flex;
@@ -3075,7 +3075,7 @@ ul {
   text-decoration: none;
 }
 .footer__copyright a:hover {
-  color: #647dee;
+  color: #a754e2;
 }
 @media (min-width: 768px) {
   .footer {
@@ -3123,7 +3123,7 @@ ul {
   justify-content: flex-start;
   align-items: center;
   margin: 40px auto;
-  background-color: #fff;
+  background-color: #212121;
   border-radius: 20px;
   padding: 30px 20px;
   width: 100%;
@@ -3138,7 +3138,7 @@ ul {
   right: 20px;
 }
 .modal__close svg {
-  fill: #647dee;
+  fill: #a754e2;
   transition: fill 0.4s ease;
   height: auto;
   width: 24px;
@@ -3151,7 +3151,7 @@ ul {
 }
 .modal__title {
   font-size: 32px;
-  color: #343434;
+  color: #ffffff;
   font-family: 'Jura', sans-serif;
   font-weight: 600;
   line-height: 100%;
@@ -3166,14 +3166,14 @@ ul {
   margin-top: 30px;
   font-size: 16px;
   line-height: 26px;
-  color: #505050;
+  color: #f6f6f6;
 }
 .modal__text a {
   position: relative;
-  color: #647dee;
+  color: #a754e2;
 }
 .modal__text a:hover {
-  color: #a754e2;
+  color: #890ce3;
   text-decoration: underline;
 }
 .modal__article h1,
@@ -3182,7 +3182,7 @@ ul {
 .modal__article h4,
 .modal__article h5,
 .modal__article h6 {
-  color: #343434;
+  color: #ffffff;
   font-weight: 500;
   margin-bottom: 15px;
 }
@@ -3226,7 +3226,7 @@ ul {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
-  color: #505050;
+  color: #f6f6f6;
   margin-bottom: 20px;
 }
 .modal__article p b {
@@ -3250,7 +3250,7 @@ ul {
   padding: 0 0 0 20px;
   font-size: 16px;
   line-height: 26px;
-  color: #343434;
+  color: #ffffff;
   font-weight: 400;
   margin-bottom: 20px;
 }
@@ -3278,7 +3278,7 @@ ul {
   font-size: 16px;
   line-height: 26px;
   font-weight: 400;
-  color: #505050;
+  color: #ffffff;
   padding-left: 5px;
 }
 .modal__article ul:last-child {
@@ -3305,19 +3305,19 @@ ul {
 .modal__article ol li {
   font-size: 16px;
   line-height: 26px;
-  color: #505050;
+  color: #ffffff;
   position: relative;
   margin-top: 20px;
 }
 .modal__article ol li b {
   font-weight: 500;
-  color: #505050;
+  color: #ffffff;
 }
 .modal__article ol li a {
-  color: #647dee;
+  color: #a754e2;
 }
 .modal__article ol li a:hover {
-  color: #a754e2;
+  color: #6f00bc;
   text-decoration: underline;
 }
 .modal__article ol li:last-child {
@@ -3472,9 +3472,23 @@ img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
-  max-width: 1000px;
+  max-width: 600px;
   position: relative;
   margin: auto;
+}
+.iphone-slideshow-container {
+  max-width: 225px;
+  width: 100%;
+  position: relative;
+  margin: auto;
+  padding: 0;
+}
+
+@media screen and (min-width: 1920px) {
+
+  .slideshow-container {
+    width: 80%;
+  }
 }
 
 /* Next & previous buttons */
@@ -3515,12 +3529,87 @@ img {vertical-align: middle;}
 
 
 /* Fading animation */
-.fade {
-  animation-name: fade;
-  animation-duration: 1s;
+/* Next & previous buttons */
+.prevIphone, .nextIphone {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  left: -40px;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: #a754e2;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  user-select: none;
 }
 
-@keyframes fade {
-  from {opacity: .4}
-  to {opacity: 1}
+/* Position the "next button" to the right */
+.nextIphone {
+  right: -300px;
 }
+
+/* On hover, add a black background color with a little bit see-through */
+.prevIphone:hover, .nextIphone:hover {
+  color: #a754e2;
+}
+
+.iphonePreviewText {
+  height: 50%;
+  align-self: center;
+
+}
+
+.marketCoinsDiv {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+
+.marketCoinContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  padding: 10px;
+  color: #ffffff;
+  background-color: #212121;
+  box-shadow: 1px 1px 10px #ffffff;
+  font-family: 'Jura', sans-serif;
+  margin-right: 15px;
+  margin-top: 15px;
+  margin-left: 15px;
+  width: 333px;
+}
+.marketCoinContainer .marketCoinLogo img {
+  border-radius: 50px;
+  margin-right: 10px;
+  width: 50px;
+  position: absolute;
+  left: -50px;
+  margin-top: 3px;
+
+}
+.marketCoinTextDiv {
+  position: absolute;
+  left: 265px;
+
+}
+.marketCoinPrice {
+  margin-top: 20px;
+  margin-left: 20px;
+  position: relative;
+  left: 65px;
+  top: 15px;
+}
+
+
+
+
+
+
+
+
+
