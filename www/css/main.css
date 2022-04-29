@@ -3582,27 +3582,27 @@ img {vertical-align: middle;}
   margin-top: 15px;
   margin-left: 15px;
   width: 333px;
+  height: 75px;
 }
 .marketCoinContainer .marketCoinLogo img {
   border-radius: 50px;
   margin-right: 10px;
   width: 50px;
   position: absolute;
-  left: -50px;
+  right: 95px;
+  bottom: -25px;
   margin-top: 3px;
 
 }
 .marketCoinTextDiv {
   position: absolute;
-  left: 265px;
+  right: 108px;
+  bottom: 4px;
 
 }
 .marketCoinPrice {
-  margin-top: 20px;
-  margin-left: 20px;
-  position: relative;
-  left: 65px;
-  top: 15px;
+  position: absolute;
+  right: -120px;
 }
 
 
