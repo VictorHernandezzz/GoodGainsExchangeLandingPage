@@ -3,29 +3,27 @@
 //coins variables
 
 //coin price
-let metagodsPrice = document.getElementById("metagodsPrice");
-let sidusPrice = document.getElementById("sidusPrice");
-let illuviumPrice = document.getElementById("illuviumPrice");
-let affynPrice = document.getElementById("affynPrice");
-let splinterlandsPrice = document.getElementById("splinterlandsPrice");
-let atariPrice = document.getElementById("atariPrice");
+var metagodsPrice = document.getElementById("metagodsPrice");
+var sidusPrice = document.getElementById("sidusPrice");
+var illuviumPrice = document.getElementById("illuviumPrice");
+var affynPrice = document.getElementById("affynPrice");
+var splinterlandsPrice = document.getElementById("splinterlandsPrice");
+var atariPrice = document.getElementById("atariPrice");
 
 //coin 24 hour change
-let metagods24Change = document.getElementById("metagods24Change");
-let sidus24Change = document.getElementById("sidus24Change");
-let illuvium24Change = document.getElementById("illuvium24Change");
-let affyn24Change = document.getElementById("affyn24Change");
-let splinterlands24Change = document.getElementById("splinterlands24Change");
-let atari24Change = document.getElementById("atari24Change");
+var metagods24Change = document.getElementById("metagods24Change");
+var sidus24Change = document.getElementById("sidus24Change");
+var illuvium24Change = document.getElementById("illuvium24Change");
+var affyn24Change = document.getElementById("affyn24Change");
+var splinterlands24Change = document.getElementById("splinterlands24Change");
+var atari24Change = document.getElementById("atari24Change");
 
-let metagods24ChangeSymbol = document.getElementById("metagods24ChangeSymbol");
-let sidus24ChangeSymbol = document.getElementById("sidus24ChangeSymbol");
-let illuvium24ChangeSymbol = document.getElementById("illuvium24ChangeSymbol");
-let affyn24ChangeSymbol = document.getElementById("affyn24ChangeSymbol");
-let splinterlands24ChangeSymbol = document.getElementById( "splinterlands24ChangeSymbol");
-let atari24ChangeSymbol = document.getElementById("atari24ChangeSymbol");
-
-
+var metagods24ChangeSymbol = document.getElementById("metagods24ChangeSymbol");
+var sidus24ChangeSymbol = document.getElementById("sidus24ChangeSymbol");
+var illuvium24ChangeSymbol = document.getElementById("illuvium24ChangeSymbol");
+var affyn24ChangeSymbol = document.getElementById("affyn24ChangeSymbol");
+var splinterlands24ChangeSymbol = document.getElementById( "splinterlands24ChangeSymbol");
+var atari24ChangeSymbol = document.getElementById("atari24ChangeSymbol");
 
 
 
@@ -37,7 +35,9 @@ let atari24ChangeSymbol = document.getElementById("atari24ChangeSymbol");
 
 
 
-const livePrice = {
+
+
+var livePrice = {
     "async": true,
     "scroosDomain": true,
     "url": "https://api.coingecko.com/api/v3/simple/price?ids=metagods%2Csidus%2Cilluvium%2Caffyn%2Csplinterlands%2Catari&vs_currencies=USD&include_market_cap=true&include_24hr_change=true",
@@ -46,12 +46,12 @@ const livePrice = {
 }
 $.ajax(livePrice).done(function (response) {
     console.log(response);
-    let metagods24ChangeNum = JSON.stringify(response.metagods.usd_24h_change).substring(0,5);
-    let sidus24ChangeNum = JSON.stringify(response.sidus.usd_24h_change).substring(0,5);
-    let illuvium24ChangeNum = JSON.stringify(response.illuvium.usd_24h_change).substring(0,5);
-    let affyn24ChangeNum = JSON.stringify(response.affyn.usd_24h_change).substring(0,5);
-    let splinterlands24ChangeNum = JSON.stringify(response.splinterlands.usd_24h_change).substring(0,5);
-    let atari24ChangeNum = JSON.stringify(response.atari.usd_24h_change).substring(0,5);
+    var metagods24ChangeNum = JSON.stringify(response.metagods.usd_24h_change).substring(0,5);
+    var sidus24ChangeNum = JSON.stringify(response.sidus.usd_24h_change).substring(0,5);
+    var illuvium24ChangeNum = JSON.stringify(response.illuvium.usd_24h_change).substring(0,5);
+    var affyn24ChangeNum = JSON.stringify(response.affyn.usd_24h_change).substring(0,5);
+    var splinterlands24ChangeNum = JSON.stringify(response.splinterlands.usd_24h_change).substring(0,5);
+    var atari24ChangeNum = JSON.stringify(response.atari.usd_24h_change).substring(0,5);
 
     function is24hNeg (coinNum) {
         if (Math.sign(coinNum) === -1) {
